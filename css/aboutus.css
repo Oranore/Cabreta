@@ -68,6 +68,27 @@ nav a[href="index.html"]{
     line-height: 30px;
 }
 
+/* CSS DARK MODE */
+:root {
+  --background-color: white;
+  --text-color: black;
+  /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+}
+
+[data-theme="dark"] {
+  /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+  /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+  --background-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* FIN DARK MODE */
+
 
 /* MOBILE */
 
